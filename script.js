@@ -6,6 +6,7 @@ function clock() {
     var date = new Date();
     var hours = date.getHours() % 12; // convert to 12hr format
     var AmPm = date.getHours >= 12 ? 'PM' : 'AM';
+    console.log(hours, AmPm);
     hours = hours === 0 ? 12 : hours; // handle midnight (0 hours)
     var minutes = date.getMinutes();
     var seconds = date.getSeconds();
